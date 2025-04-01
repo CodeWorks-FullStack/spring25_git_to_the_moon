@@ -1,10 +1,19 @@
 <script setup>
+import { Pop } from '@/utils/Pop.js';
 import { AppState } from '../AppState';
 import { computed, ref, onMounted } from 'vue';
 
 const upgrades = computed(() => AppState.ClickUpgrades)
 
 function buyUpgrade(upgrade) {
+
+  if (AppState.cheese < upgrade.price) {
+    return Pop.toast('Not enough cheese you bum!!!')
+  }
+
+  AppState.cheese -= upgrade.price
+  upgrade.quantity++
+  upgrade.price += 10
 
 }
 
