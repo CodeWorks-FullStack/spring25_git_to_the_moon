@@ -1,12 +1,13 @@
 <script setup>
+import AutoUpgrades from '@/components/AutoUpgrades.vue';
 import ClickUpgrades from '@/components/ClickUpgrades.vue';
 import Moon from '@/components/Moon.vue';
-
 
 </script>
 
 <template>
   <Moon />
+  <AutoUpgrades  />
   <ClickUpgrades />
 </template>
 
