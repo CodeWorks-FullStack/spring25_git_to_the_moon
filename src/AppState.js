@@ -11,9 +11,15 @@ export const AppState = reactive({
     {
       name: 'Mousetronaut',
       price: 20,
-      bonus: 10,
+      power: 10,
       quantity: 0
-    }
+    },
+    {
+      name: 'Space Station',
+      price: 100,
+      power: 25,
+      quantity: 0
+    },
   ]
 })
 
