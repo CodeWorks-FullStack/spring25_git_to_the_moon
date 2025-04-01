@@ -1,11 +1,11 @@
 <script setup >
-import Example from '@/components/Example.vue';
+import Moon from '@/components/Moon.vue';
 
 
 </script>
 
 <template>
-  <Example />
+  <Moon/>
 </template>
 
 <style scoped lang="scss">
