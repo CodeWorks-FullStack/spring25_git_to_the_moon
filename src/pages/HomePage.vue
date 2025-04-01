@@ -1,13 +1,12 @@
-<script setup >
+<script setup>
+import AutoUpgrades from '@/components/AutoUpgrades.vue';
 import Moon from '@/components/Moon.vue';
-
 
 </script>
 
 <template>
-  <Moon/>
+  <Moon />
+  <AutoUpgrades />
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
