@@ -12,6 +12,7 @@ import Moon from '@/components/Moon.vue';
 <style lang="scss">
 .upgrades {
   padding: 3em;
+  margin: 1em;
   background-color: pink;
   border: 10px double green;
   color: yellow;
