@@ -6,6 +6,20 @@ export const AppState = reactive({
   identity: null,
   /** @type {import('./models/Account.js').Account} user info from the database*/
   account: null,
-  cheese: 0
+  cheese: 0,
+  autoUpgrades: [
+    {
+      name: 'Mousetronaut',
+      price: 20,
+      power: 10,
+      quantity: 0
+    },
+    {
+      name: 'Space Station',
+      price: 100,
+      power: 25,
+      quantity: 0
+    },
+  ]
 })
 
