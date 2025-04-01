@@ -17,6 +17,8 @@ function buyUpgrade(upgrade) {
 
 }
 
+const clickTotal = computed(() => 1 + AppState.ClickUpgrades.reduce((acc, u) => acc += u.power * u.quantity, 0))
+
 
 
 </script>
@@ -24,7 +26,7 @@ function buyUpgrade(upgrade) {
 
 <template>
   <div class="upgrades">
-    <p>Total Click Power</p>
+    <p>Total Click Power {{ clickTotal }} </p>
     <div class="upgrade" v-for="u in upgrades" :key="u.name">
       <p>{{ u.name }}</p>
       <p>{{ u.quantity }} -> {{ u.power }} -> {{ u.quantity * u.power }}</p>
