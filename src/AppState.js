@@ -20,6 +20,10 @@ export const AppState = reactive({
       power: 25,
       quantity: 0
     },
+  ],
+  ClickUpgrades: [
+    { name: '🔪', power: 1, price: 5, quantity: 0 },
+    { name: '🪛', power: 5, price: 25, quantity: 0 }
   ]
 })
 

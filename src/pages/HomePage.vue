@@ -1,28 +1,36 @@
 <script setup>
 import AutoUpgrades from '@/components/AutoUpgrades.vue';
+import ClickUpgrades from '@/components/ClickUpgrades.vue';
 import Moon from '@/components/Moon.vue';
 
 </script>
 
 <template>
   <Moon />
-  <AutoUpgrades />
+  <AutoUpgrades  />
+  <ClickUpgrades />
 </template>
 
 <style lang="scss">
 .upgrades {
+  display: flex;
   padding: 3em;
-  margin: 1em;
-  background-color: pink;
-  border: 10px double green;
-  color: yellow;
-  font-weight: bold;
-  text-shadow: 1px 1px green;
+  background-color: slategray;
+  gap: 3em;
 
-  button {
-    color: green;
-    background-color: yellow;
-    box-shadow: 0 0 20px purple;
+  .upgrade {
+    background-color: black;
+    padding: 3em;
+    text-align: center;
+    color: yellow;
+    border-radius: 1em;
+
+    button {
+      background-color: transparent;
+      padding: 1em;
+      color: yellow;
+      border: 1px solid yellow;
+    }
   }
 }
 </style>
